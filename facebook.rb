@@ -19,8 +19,8 @@ def formatted_posts(posts)
   end
 end
 
-def page_info
-  info = @graph.get_object('Gazelle.com?', {}, {:use_ssl => true})
+def page_info(page_name)
+  info = @graph.get_object(page_name, {}, {:use_ssl => true})
   {
     likes: info['likes'],
     checkins: info['checkins'],
