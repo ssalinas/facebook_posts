@@ -10,3 +10,6 @@ This widget is an extension of the comments widget to display facebook posts and
 - replace the page name with the page you are interested in getting info for
 
 Feel free to fork or leave comments!
+
+
+![widget_example](https://github.com/ssalinas/facebook_posts/raw/master/widget_example.png)
