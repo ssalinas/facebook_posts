@@ -11,5 +11,6 @@ This widget is an extension of the comments widget to display facebook posts and
 
 Feel free to fork or leave comments!
 
+##Example
 
 ![widget_example](https://github.com/ssalinas/facebook_posts/raw/master/widget_example.png)
