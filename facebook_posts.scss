@@ -2,6 +2,7 @@
 // Sass declarations
 // ----------------------------------------------------------------------------
 $background-color:  #FFF;
+$foreground-color:  #303030;
 
 $title-color:       #000000;
 $moreinfo-color:    #000000;
@@ -14,6 +15,11 @@ $moreinfo-color:    #000000;
   height: 100%;
   width: 100%;
   background-color: $background-color;
+  color: $foreground-color;
+
+  h3 {
+    color: $foreground-color;
+  }
 
   .title {
     color: $title-color;
@@ -49,6 +55,7 @@ $moreinfo-color:    #000000;
   .more-info {
     color: $moreinfo-color;
   }
+
   img.background {
     width: auto;
     height: 60%;
@@ -58,5 +65,4 @@ $moreinfo-color:    #000000;
     opacity: 0.2;
     z-index: 0;
   }
-
 }
