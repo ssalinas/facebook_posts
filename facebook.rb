@@ -20,7 +20,9 @@ def formatted_posts(posts)
 end
 
 def page_info(page_name)
-  info = @graph.get_object(page_name, {}, {:use_ssl => true})
+  info = @graph.get_object(page_name,
+                           {fields: ['likes', 'checkins', 'talking_about_count']},
+                           {:use_ssl => true})
   {
     likes: info['likes'],
     checkins: info['checkins'],
