@@ -1,7 +1,9 @@
 require 'koala'
 
 def facebook_posts(page_name)
-  posts = @graph.get_connections(page_name, 'tagged')
+  posts = @graph.get_connections(page_name, 'tagged',
+                                 {fields: ['message', 'from', 'picture', 'icon']},
+                                 {:use_ssl => true})
   formatted_posts(posts[0..9])
 end
 
@@ -13,7 +15,7 @@ def formatted_posts(posts)
   posts.each_with_object([]) do |post, arr|
     arr << {
       name: post['from']['name'],
-      body: post['message'] == "" ? " -" : post['message'],
+      body: post['message'] == "" ? "–" : post['message'],
       avatar: post['picture'] || post['icon']
     }
   end
